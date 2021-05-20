@@ -40,19 +40,19 @@ public class CartController {
 	public ResponseEntity<Cart> addTocart(@RequestBody ModifyCartRequest request) {
 		User user = userRepository.findByUsername(request.getUsername());
 		if(user == null) {
-			log.warn("No User found for Username", request.getUsername());
+			log.debug("No User found for Username {}", request.getUsername());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		Optional<Item> item = itemRepository.findById(request.getItemId());
 		if(!item.isPresent()) {
-			log.warn("No Item found for Id: ", request.getItemId());
+			log.debug("No Item found for Id: {}", request.getItemId());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		Cart cart = user.getCart();
 		IntStream.range(0, request.getQuantity())
 			.forEach(i -> cart.addItem(item.get()));
 		cartRepository.save(cart);
-		log.info("Added to Cart for username", request.getUsername());
+		log.info("Added to Cart for username {}", request.getUsername());
 		return ResponseEntity.ok(cart);
 	}
 	
@@ -60,19 +60,19 @@ public class CartController {
 	public ResponseEntity<Cart> removeFromcart(@RequestBody ModifyCartRequest request) {
 		User user = userRepository.findByUsername(request.getUsername());
 		if(user == null) {
-			log.debug("No User found with name",request.getUsername());
+			log.debug("No User found with name {}",request.getUsername());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		Optional<Item> item = itemRepository.findById(request.getItemId());
 		if(!item.isPresent()) {
-			log.debug("Not item found with Id",request.getItemId());
+			log.debug("Not item found with Id {}",request.getItemId());
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 		}
 		Cart cart = user.getCart();
 		IntStream.range(0, request.getQuantity())
 			.forEach(i -> cart.removeItem(item.get()));
 		cartRepository.save(cart);
-		log.info("Removed Item from Cart for user",request.getUsername());
+		log.info("Removed Item from Cart for user {}",request.getUsername());
 		return ResponseEntity.ok(cart);
 	}
 		
