@@ -1,0 +1,52 @@
+2021-05-20 14:43:31.833  INFO 17644 --- [main] com.example.demo.SareetaApplication      : Starting SareetaApplication on LAPTOP-EC0VTPN4 with PID 17644 (started by mkd in C:\Users\mkd\OneDrive - Trivadis AG\Desktop\Projects\E-Commerce-Application\nd035-c4-Security-and-DevOps\starter_code)
+2021-05-20 14:43:31.850  INFO 17644 --- [main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2021-05-20 14:43:32.469  INFO 17644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-05-20 14:43:32.554  INFO 17644 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71ms. Found 4 repository interfaces.
+2021-05-20 14:43:33.105  INFO 17644 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fda8802] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-20 14:43:33.634  INFO 17644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-05-20 14:43:33.659  INFO 17644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-20 14:43:33.660  INFO 17644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2021-05-20 14:43:33.810  INFO 17644 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-20 14:43:33.810  INFO 17644 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1906 ms
+2021-05-20 14:43:34.004  INFO 17644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-20 14:43:34.197  INFO 17644 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-20 14:43:34.267  INFO 17644 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-05-20 14:43:34.346  INFO 17644 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-05-20 14:43:34.347  INFO 17644 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-05-20 14:43:34.486  INFO 17644 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-05-20 14:43:34.665  INFO 17644 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-20 14:43:35.531  INFO 17644 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-20 14:43:36.137  WARN 17644 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-20 14:43:36.259  INFO 17644 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6219006a, org.springframework.security.web.context.SecurityContextPersistenceFilter@70bc9070, org.springframework.security.web.header.HeaderWriterFilter@64186f60, org.springframework.web.filter.CorsFilter@1e836aed, org.springframework.security.web.authentication.logout.LogoutFilter@345540f9, com.example.demo.security.JWTAuthenticationFilter@4bc41565, com.example.demo.security.JWTAuthenticationVerficationFilter@8dedec8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71e409f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cb43fd3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@226e95e9, org.springframework.security.web.session.SessionManagementFilter@61b76a7d, org.springframework.security.web.access.ExceptionTranslationFilter@194eae3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a013bdd]
+2021-05-20 14:43:36.397  INFO 17644 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-20 14:43:36.590  INFO 17644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-20 14:43:36.592  INFO 17644 --- [main] com.example.demo.SareetaApplication      : Started SareetaApplication in 5.166 seconds (JVM running for 5.657)
+2021-05-20 14:45:12.350  INFO 17644 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-20 14:45:12.352  INFO 17644 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-20 14:45:12.366  INFO 17644 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-05-20 14:45:12.537  INFO 17644 --- [http-nio-8081-exec-1] c.e.demo.controllers.UserController      : User name set with Mika
+2021-05-20 14:45:12.765  INFO 17644 --- [http-nio-8081-exec-1] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:45:21.452  INFO 17644 --- [http-nio-8081-exec-3] c.e.demo.controllers.UserController      : User name set with Max
+2021-05-20 14:45:21.524  INFO 17644 --- [http-nio-8081-exec-3] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:45:29.593  INFO 17644 --- [http-nio-8081-exec-4] c.e.demo.controllers.UserController      : User name set with Moritz
+2021-05-20 14:45:29.671  INFO 17644 --- [http-nio-8081-exec-4] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:47:49.864  INFO 17644 --- [http-nio-8081-exec-7] c.e.demo.controllers.UserController      : User name set with Helmut
+2021-05-20 14:47:49.934  INFO 17644 --- [http-nio-8081-exec-7] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:49:08.110  INFO 17644 --- [http-nio-8081-exec-10] c.e.demo.controllers.UserController      : User name set with Jimmy
+2021-05-20 14:49:08.180  INFO 17644 --- [http-nio-8081-exec-10] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:49:12.352  INFO 17644 --- [http-nio-8081-exec-2] c.e.demo.controllers.UserController      : User name set with Amine
+2021-05-20 14:49:12.429  INFO 17644 --- [http-nio-8081-exec-2] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:49:16.735  INFO 17644 --- [http-nio-8081-exec-1] c.e.demo.controllers.UserController      : User name set with Phil
+2021-05-20 14:49:16.800  INFO 17644 --- [http-nio-8081-exec-1] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:49:24.924  INFO 17644 --- [http-nio-8081-exec-3] c.e.demo.controllers.UserController      : User name set with Anette
+2021-05-20 14:49:25.001  INFO 17644 --- [http-nio-8081-exec-3] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:51:57.501  INFO 17644 --- [http-nio-8081-exec-6] c.e.demo.controllers.UserController      : User name set with Lars
+2021-05-20 14:51:57.570  INFO 17644 --- [http-nio-8081-exec-6] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:52:07.069  INFO 17644 --- [http-nio-8081-exec-7] c.e.demo.controllers.UserController      : User name set with Nicole
+2021-05-20 14:52:07.137  INFO 17644 --- [http-nio-8081-exec-7] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:52:33.533  INFO 17644 --- [http-nio-8081-exec-8] c.e.demo.controllers.UserController      : User name set with Frank
+2021-05-20 14:52:33.609  INFO 17644 --- [http-nio-8081-exec-8] c.e.demo.controllers.UserController      : Created User successfully!
+2021-05-20 14:53:54.624  INFO 17644 --- [http-nio-8081-exec-2] c.e.demo.controllers.UserController      : User name set with Elia
+2021-05-20 14:53:54.692  INFO 17644 --- [http-nio-8081-exec-2] c.e.demo.controllers.UserController      : Created User successfully!
